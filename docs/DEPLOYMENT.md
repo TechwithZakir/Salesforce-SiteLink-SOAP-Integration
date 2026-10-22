@@ -4,7 +4,7 @@ Salesforce ↔ SiteLink integration · deployment record of 22 Oct 2026
 
 | | |
 |---|---|
-| Target org | `dev-zakir` (m.zakir.bd@gmail.com, Org ID `00D2w000000n9XHEAY`), Developer Edition |
+| Target org | `dev-zakir` (, Org ID `00D2w000000n9XXXXX`), Developer Edition |
 | API version | 68.0 |
 | Deploy ID | `0AfdL00000hbfufSAA` (Succeeded, 18:16–18:17 UTC) |
 | Components | 182 / 182 deployed, 0 errors |
