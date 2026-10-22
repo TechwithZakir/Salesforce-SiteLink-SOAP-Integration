@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Opp Comment</label>
+    <protected>false</protected>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">Opportunity</value>
+    </values>
+    <values>
+        <field>Field__c</field>
+        <value xsi:type="xsd:string">Description</value>
+    </values>
+    <values>
+        <field>Outbound_Param__c</field>
+        <value xsi:type="xsd:string">sComment</value>
+    </values>
+    <values>
+        <field>Inbound_Column__c</field>
+        <value xsi:type="xsd:string">sComment</value>
+    </values>
+    <values>
+        <field>Direction__c</field>
+        <value xsi:type="xsd:string">Both</value>
+    </values>
+    <values>
+        <field>Default_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Value_Map__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Source_Operation__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

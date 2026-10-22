@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Rent__c</fullName>
+    <description>From the RentRoll report during reconciliation.</description>
+    <inlineHelpText>From the RentRoll report during reconciliation.</inlineHelpText>
+    <label>Current Rent</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

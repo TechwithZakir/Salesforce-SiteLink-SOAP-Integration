@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteLink_Date_Needed__c</fullName>
+    <description>Move-in date the customer needs the unit (dNeeded).</description>
+    <inlineHelpText>Move-in date the customer needs the unit (dNeeded).</inlineHelpText>
+    <label>Date Needed</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_Enabled__c</fullName>
+    <description>When checked, scheduled polling pulls tenants, reservations and units for this store.</description>
+    <inlineHelpText>When checked, scheduled polling pulls tenants, reservations and units for this store.</inlineHelpText>
+    <label>Sync Enabled</label>
+    <defaultValue>true</defaultValue>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

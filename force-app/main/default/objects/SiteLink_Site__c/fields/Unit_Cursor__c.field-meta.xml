@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Cursor__c</fullName>
+    <description>lngLastTimePolled value sent on the next UnitsInformation_v2 call. Blank means full pull.</description>
+    <inlineHelpText>lngLastTimePolled value sent on the next UnitsInformation_v2 call. Blank means full pull.</inlineHelpText>
+    <label>Unit Poll Cursor</label>
+    <length>40</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+</CustomField>

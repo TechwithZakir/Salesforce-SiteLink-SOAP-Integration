@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Param__c</fullName>
+    <description>SiteLink request parameter, e.g. sFName.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Outbound Param</label>
+    <length>80</length>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

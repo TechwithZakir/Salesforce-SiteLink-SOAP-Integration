@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Push__c</fullName>
+    <description>When checked, saving a linked Account/Opportunity pushes it to SiteLink in the background.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Auto Push</label>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteLink_Sync_Message__c</fullName>
+    <description>Plain-language result of the last SiteLink sync. Set by the integration.</description>
+    <inlineHelpText>Plain-language result of the last SiteLink sync. Set by the integration.</inlineHelpText>
+    <label>SiteLink Sync Message</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+</CustomField>

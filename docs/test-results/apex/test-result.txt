@@ -1,0 +1,119 @@
+=== Test Results
+TEST NAME                                                               OUTCOME  MESSAGE  RUNTIME (MS)
+──────────────────────────────────────────────────────────────────────  ───────  ───────  ────────────
+SiteLinkJobsTest.alertsAreSkippedWithoutRecipients                      Pass              203         
+SiteLinkJobsTest.batchPollsEachEnabledStore                             Pass              789         
+SiteLinkJobsTest.discoveryAddsNewStoresAutomatically                    Pass              293         
+SiteLinkJobsTest.discoveryFailureIsLoggedAndAlerted                     Pass              602         
+SiteLinkJobsTest.inactiveSchedulerDoesNothing                           Pass              99          
+SiteLinkJobsTest.pollRetriesAndStartsIncrementalPull                    Pass              550         
+SiteLinkJobsTest.purgesOldLogsOnly                                      Pass              1125        
+SiteLinkJobsTest.reconcileDiscoversStores                               Pass              768         
+SiteLinkJobsTest.scheduleDefaultsCreatesFiveJobs                        Pass              714         
+SiteLinkPushServiceTest.ambiguousMatchStopsAndAlerts                    Pass              339         
+SiteLinkPushServiceTest.createsTenantThenReservation                    Pass              258         
+SiteLinkPushServiceTest.customerAtAnotherStoreIsExplained               Pass              367         
+SiteLinkPushServiceTest.exhaustedRetriesFailAndAlert                    Pass              294         
+SiteLinkPushServiceTest.linksExistingTenantInsteadOfCreatingDuplicate   Pass              240         
+SiteLinkPushServiceTest.missingStoreIsExplained                         Pass              216         
+SiteLinkPushServiceTest.missingUnitSendsCustomerOnly                    Pass              288         
+SiteLinkPushServiceTest.pushesAccountOnItsOwn                           Pass              310         
+SiteLinkPushServiceTest.queueableAndFinalizerKeepRecordsMoving          Pass              301         
+SiteLinkPushServiceTest.reservationUpdateWithoutStatusIsRefused         Pass              319         
+SiteLinkPushServiceTest.transientErrorsBackOff                          Pass              204         
+SiteLinkPushServiceTest.updatesLinkedRecordsOnlyWhenChanged             Pass              346         
+SiteLinkControllerTest.accountPageWorksToo                              Pass              363         
+SiteLinkControllerTest.explainsWhyItCannotRun                           Pass              169         
+SiteLinkControllerTest.pushFromTheButtonReturnsFreshStatus              Pass              472         
+SiteLinkControllerTest.refreshBringsSiteLinkValuesBack                  Pass              599         
+SiteLinkPullServiceTest.fullPullCreatesStoreDataUnderTheRightLocation   Pass              608         
+SiteLinkPullServiceTest.localChangesWaitingToGoOutWin                   Pass              513         
+SiteLinkPullServiceTest.oneFailedCallDoesNotStopTheRest                 Pass              358         
+SiteLinkPullServiceTest.ticksMatchDotNetEpoch                           Pass              36          
+SiteLinkPullServiceTest.unchangedDataCausesNoWritesAndNoPushBack        Pass              907         
+SiteLinkTriggerHandlerTest.clonedRecordsDoNotInheritSiteLinkLinks       Pass              132         
+SiteLinkTriggerHandlerTest.inactiveIntegrationLeavesRecordsAlone        Pass              107         
+SiteLinkTriggerHandlerTest.linkedAccountChangeIsQueued                  Pass              364         
+SiteLinkTriggerHandlerTest.newOpportunityIsPushedInTheBackground        Pass              337         
+SiteLinkTriggerHandlerTest.retrySweepPicksUpDueRecords                  Pass              383         
+SiteLinkTriggerHandlerTest.unrelatedEditsAndIntegrationWritesDoNotPush  Pass              499         
+SiteLinkTransportTest.blankNonStringParamsAreOmitted                    Pass              121         
+SiteLinkTransportTest.envelopeUsesCredentialMergeFieldsAndWsdlOrder     Pass              197         
+SiteLinkTransportTest.errorTranslatorCoversEveryKind                    Pass              61          
+SiteLinkTransportTest.formatsValuesByXsdType                            Pass              56          
+SiteLinkTransportTest.loggerTruncatesAndRespectsPayloadSetting          Pass              121         
+SiteLinkTransportTest.loginFaultIsNotRetryable                          Pass              94          
+SiteLinkTransportTest.missingSettingsGiveAPlainMessage                  Pass              88          
+SiteLinkTransportTest.parsesDataSetRowsAndReturnCode                    Pass              53          
+SiteLinkTransportTest.parsesSoapFaultAndBlankBody                       Pass              57          
+SiteLinkTransportTest.reportingOperationsGoToReportingService           Pass              95          
+SiteLinkTransportTest.retCodeErrorsAndListSemantics                     Pass              106         
+SiteLinkTransportTest.transientFailuresAreRetryable                     Pass              95          
+SiteLinkTransportTest.wantedColumnsDropsUnmappedColumns                 Pass              55          
+SiteLinkDiagnosticsTest.probeReportsEachAssumption                      Pass              201         
+SiteLinkDiagnosticsTest.probeStopsWhenLoginFails                        Pass              103         
+SiteLinkDiagnosticsTest.roundTripCreatesReadsAndUpdates                 Pass              170         
+SiteLinkDiagnosticsTest.roundTripReportsSiteLinkErrors                  Pass              119         
+SiteLinkFieldMapperTest.appliesInboundValuesWithTypeConversion          Pass              161         
+SiteLinkFieldMapperTest.buildsOutboundParamsWithDefaultsAndValueMaps    Pass              61          
+SiteLinkFieldMapperTest.comparesValuesSensibly                          Pass              46          
+SiteLinkFieldMapperTest.convertsDatesAndInboundValueMaps                Pass              255         
+SiteLinkFieldMapperTest.fingerprintChangesOnlyWithMappedFields          Pass              66          
+
+
+=== Apex Code Coverage by Class
+CLASSES                     PERCENT  UNCOVERED LINES        
+──────────────────────────  ───────  ───────────────────────
+SiteLinkSoapClient          98%      85,146                 
+SiteLinkSyncContext         100%                            
+SiteLinkXmlParser           100%                            
+SiteLinkPullService         93%      60,61,70,71,81,...     
+SiteLinkPushFinalizer       94%      18,19                  
+SiteLinkController          94%      51,52,53,71,72,...     
+SiteLinkFieldMapper         96%      91,95,171,191,192      
+SiteLinkLogger              89%      60,61,71,72            
+SiteLinkPushQueueable       86%      17,36,49,52            
+SiteLinkScheduler           98%      70                     
+SiteLinkApi                 96%      102,103,105,138,139,...
+SiteLinkConfig              86%      26,27,37,38,58,...     
+SiteLinkDiscoveryQueueable  100%                            
+SiteLinkException           100%                            
+SiteLinkTriggerHandler      95%      57,81,85               
+SiteLinkPullBatch           91%      32,33,34               
+SiteLinkResponse            91%      15,16                  
+SiteLinkPushService         95%      86,95,120,121,157,...  
+SiteLinkDiagnostics         88%      23,24,25,26,57,...     
+SiteLinkAlerts              90%      16,29,30               
+SiteLinkErrors              100%                            
+SiteLinkAccountTrigger      100%                            
+SiteLinkOpportunityTrigger  100%                            
+
+
+=== Test Setup Time by Test Class for Run 707dL00001T05Ba
+TEST SETUP METHOD NAME            SETUP TIME
+────────────────────────────────  ──────────
+SiteLinkJobsTest.setup            1133      
+SiteLinkPushServiceTest.setup     26009     
+SiteLinkControllerTest.setup      24883     
+SiteLinkPullServiceTest.setup     26919     
+SiteLinkTriggerHandlerTest.setup  30131     
+SiteLinkTransportTest.setup       32600     
+SiteLinkDiagnosticsTest.setup     35447     
+SiteLinkFieldMapperTest.setup     36711     
+
+
+=== Test Summary
+NAME                 VALUE               
+───────────────────  ────────────────────
+Outcome              Passed              
+Tests Ran            66                  
+Pass Rate            100%                
+Fail Rate            0%                  
+Skip Rate            0%                  
+Test Run Id          707dL00001T05Ba     
+Test Setup Time      213833 ms           
+Test Execution Time  16853 ms            
+Test Total Time      230686 ms           
+Org Id               00D2w000000n9XHEAY  
+Username             m.zakir.bd@gmail.com
+Org Wide Coverage    69%                 

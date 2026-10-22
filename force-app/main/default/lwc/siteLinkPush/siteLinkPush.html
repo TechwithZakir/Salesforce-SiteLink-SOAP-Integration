@@ -1,0 +1,78 @@
+<template>
+    <lightning-card title="SiteLink" icon-name="custom:custom62">
+        <div class="slds-var-p-horizontal_medium">
+            <template lwc:if={loading}>
+                <lightning-spinner alternative-text="Loading SiteLink status" size="small"></lightning-spinner>
+            </template>
+            <template lwc:if={error}>
+                <p class="slds-text-color_error" data-id="error">{error}</p>
+            </template>
+            <template lwc:if={sync}>
+                <div class="slds-var-m-bottom_small">
+                    <span class={badgeClass} data-id="status">{statusLabel}</span>
+                </div>
+                <template lwc:if={sync.message}>
+                    <p class="slds-var-m-bottom_small" data-id="message">{sync.message}</p>
+                </template>
+                <dl class="slds-list_horizontal slds-wrap">
+                    <template lwc:if={sync.storeName}>
+                        <dt class="slds-item_label slds-text-color_weak">Store</dt>
+                        <dd class="slds-item_detail">{sync.storeName}</dd>
+                    </template>
+                    <template lwc:if={sync.unitName}>
+                        <dt class="slds-item_label slds-text-color_weak">Unit</dt>
+                        <dd class="slds-item_detail">{sync.unitName}</dd>
+                    </template>
+                    <template lwc:if={sync.tenantId}>
+                        <dt class="slds-item_label slds-text-color_weak">Tenant ID</dt>
+                        <dd class="slds-item_detail" data-id="tenant">{sync.tenantId}</dd>
+                    </template>
+                    <template lwc:if={sync.reservationId}>
+                        <dt class="slds-item_label slds-text-color_weak">Reservation ID</dt>
+                        <dd class="slds-item_detail" data-id="reservation">{sync.reservationId}</dd>
+                    </template>
+                    <template lwc:if={sync.lastSynced}>
+                        <dt class="slds-item_label slds-text-color_weak">Last synced</dt>
+                        <dd class="slds-item_detail">
+                            <lightning-formatted-date-time
+                                value={sync.lastSynced}
+                                year="numeric"
+                                month="short"
+                                day="numeric"
+                                hour="2-digit"
+                                minute="2-digit"
+                            ></lightning-formatted-date-time>
+                        </dd>
+                    </template>
+                    <template lwc:if={showCustomer}>
+                        <dt class="slds-item_label slds-text-color_weak">Customer</dt>
+                        <dd class="slds-item_detail" data-id="customer">{sync.customerStatus}</dd>
+                    </template>
+                </dl>
+                <template lwc:if={hint}>
+                    <p class="slds-text-color_weak slds-var-m-top_small" data-id="hint">{hint}</p>
+                </template>
+            </template>
+        </div>
+        <div slot="actions">
+            <lightning-button-group>
+                <lightning-button
+                    label="Refresh from SiteLink"
+                    data-id="refresh"
+                    onclick={handleRefresh}
+                    disabled={refreshDisabled}
+                ></lightning-button>
+                <lightning-button
+                    variant="brand"
+                    label="Push to SiteLink"
+                    data-id="push"
+                    onclick={handlePush}
+                    disabled={pushDisabled}
+                ></lightning-button>
+            </lightning-button-group>
+        </div>
+        <template lwc:if={busy}>
+            <lightning-spinner alternative-text="Talking to SiteLink" size="small"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteLink_Sync_Hash__c</fullName>
+    <description>Fingerprint of the mapped fields at the last sync. Used to detect real changes and stop sync loops.</description>
+    <inlineHelpText>Fingerprint of the mapped fields at the last sync. Used to detect real changes and stop sync loops.</inlineHelpText>
+    <label>SiteLink Sync Hash</label>
+    <length>64</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+</CustomField>

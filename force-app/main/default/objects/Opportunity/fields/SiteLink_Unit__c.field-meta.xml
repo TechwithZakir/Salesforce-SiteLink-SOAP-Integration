@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SiteLink_Unit__c</fullName>
+    <description>The unit being reserved.</description>
+    <inlineHelpText>The unit being reserved.</inlineHelpText>
+    <label>SiteLink Unit</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>SiteLink_Unit__c</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

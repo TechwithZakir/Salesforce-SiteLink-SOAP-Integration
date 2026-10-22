@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Key__c</fullName>
+    <description>LOCATIONCODE:UnitID. Used to upsert from SiteLink.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>LOCATIONCODE:UnitID. Used to upsert from SiteLink.</inlineHelpText>
+    <label>External Key</label>
+    <length>60</length>
+    <required>false</required>
+    <caseSensitive>false</caseSensitive>
+    <unique>true</unique>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+</CustomField>

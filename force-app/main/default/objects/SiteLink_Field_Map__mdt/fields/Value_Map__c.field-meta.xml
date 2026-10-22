@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Value_Map__c</fullName>
+    <description>One pair per line: SalesforceValue=SiteLinkValue.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Value Map</label>
+    <length>5000</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

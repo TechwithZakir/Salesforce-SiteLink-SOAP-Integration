@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Existing_Tenants__c</fullName>
+    <description>Before creating a tenant, look for one with the same email and last name.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Match Existing Tenants</label>
+    <defaultValue>true</defaultValue>
+    <type>Checkbox</type>
+</CustomField>
